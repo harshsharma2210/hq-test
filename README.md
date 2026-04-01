@@ -5,10 +5,14 @@ A static single-page marketing website for **AgentQA**, an AI behavioral QA and 
 ## Project Structure
 
 ```
-index.html   — Single landing page (HTML)
-styles.css   — Plain CSS styles (no preprocessor or framework)
-script.js    — Minimal vanilla JS for mobile nav toggle
-README.md    — This file
+index.html          — Single landing page (HTML)
+styles.css          — Plain CSS styles (no preprocessor or framework)
+script.js           — Vanilla JS IIFE fallback (nomodule browsers)
+js/
+  main.js           — ES-module entry point; imports and initialises modules
+  modules/
+    nav.js          — Mobile navigation toggle module
+README.md           — This file
 ```
 
 ## Pages

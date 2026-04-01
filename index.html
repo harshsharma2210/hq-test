@@ -189,6 +189,8 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- ES-module entry point; script.js is the nomodule fallback -->
+  <script type="module" src="js/main.js"></script>
+  <script nomodule src="script.js"></script>
 </body>
 </html>
